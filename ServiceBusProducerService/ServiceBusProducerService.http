@@ -1,0 +1,6 @@
+@ServiceBusProducerService_HostAddress = http://localhost:5244
+
+GET {{ServiceBusProducerService_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
