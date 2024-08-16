@@ -9,7 +9,7 @@ FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
 # Copy the .csproj file and restore the dependencies
-COPY ["ServiceBusProducerService/ServiceBusProducerService.csproj", "ServiceBusProducerService/"]
+COPY ["ServiceBusProducerService.csproj", "ServiceBusProducerService/"]
 RUN dotnet restore "ServiceBusProducerService/ServiceBusProducerService.csproj"
 
 # Copy the rest of the application code
