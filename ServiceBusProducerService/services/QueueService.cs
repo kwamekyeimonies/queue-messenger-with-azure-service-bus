@@ -8,9 +8,9 @@ namespace ServiceBusProducerService.services;
 public class QueueService : IQueueService
 {
     private readonly IConfiguration _configuration;
-    private readonly ILogger _logger;
+    private readonly ILogger<QueueService> _logger;
 
-    public QueueService(IConfiguration configuration,ILogger logger)
+    public QueueService(IConfiguration configuration,ILogger<QueueService> logger)
     {
         _configuration = configuration;
         _logger = logger;

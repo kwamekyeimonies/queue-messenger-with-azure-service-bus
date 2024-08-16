@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "MMGB4WS3jvU=",
+  "dgSpecHash": "YbpSFzMd5VqmbniKLwN7uwqz9cFPUjH0gRnReTRpUnOS5qGmXCiB3qO2r9qHOGEPdI7FwxcqQeXy+RKm1G2fuQ==",
   "success": true,
   "projectFilePath": "/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/ServiceBusConsumerWorker/ServiceBusConsumerWorker.csproj",
   "expectedPackageFiles": [

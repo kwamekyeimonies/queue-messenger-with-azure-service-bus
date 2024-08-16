@@ -8,6 +8,8 @@ builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 builder.Services.AddControllers();
 builder.Services.AddTransient<IQueueService, QueueService>();
+builder.Services.AddScoped<EmailService>();
+builder.Services.AddScoped<MailkitEmailService>();
 
 var app = builder.Build();
 
@@ -18,12 +20,10 @@ if (app.Environment.IsDevelopment())
     app.UseSwaggerUI();
 }
 
+app.MapControllers();
+app.UseRouting();
 app.UseHttpsRedirection();
 
 
 app.Run();
 
-record WeatherForecast(DateOnly Date, int TemperatureC, string? Summary)
-{
-    public int TemperatureF => 32 + (int)(TemperatureC / 0.5556);
-}

@@ -1,0 +1,12 @@
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/bin/osx/Debug/net8.0/EmailServiceSdk.deps.json
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/bin/osx/Debug/net8.0/EmailServiceSdk.dll
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/bin/osx/Debug/net8.0/EmailServiceSdk.pdb
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/obj/osx/Debug/net8.0/EmailServiceSdk.GeneratedMSBuildEditorConfig.editorconfig
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/obj/osx/Debug/net8.0/EmailServiceSdk.AssemblyInfoInputs.cache
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/obj/osx/Debug/net8.0/EmailServiceSdk.AssemblyInfo.cs
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/obj/osx/Debug/net8.0/EmailServiceSdk.csproj.CoreCompileInputs.cache
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/obj/osx/Debug/net8.0/EmailServiceSdk.sourcelink.json
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/obj/osx/Debug/net8.0/EmailServiceSdk.dll
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/obj/osx/Debug/net8.0/refint/EmailServiceSdk.dll
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/obj/osx/Debug/net8.0/EmailServiceSdk.pdb
+/Users/danieltenkorang/Code/github.com/kwamekyeimonies/dotnet-dev/azure-dev/EmailServiceSdk/obj/osx/Debug/net8.0/ref/EmailServiceSdk.dll
