@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.5.002.0
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusConsumerWorker", "ServiceBusConsumerWorker\ServiceBusConsumerWorker.csproj", "{C0C760B5-2871-44D7-BB09-4283633A14C9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusConsumerWorker", "ServiceBusConsumerWorker\ServiceBusConsumerWorker.csproj", "{1BB90CBC-2BA6-4326-8071-16AC276C80B6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusProducerService", "ServiceBusProducerService\ServiceBusProducerService.csproj", "{C82B6C74-5883-4D13-AABC-9A114CA07EDF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServiceBusProducerService", "ServiceBusProducerService\ServiceBusProducerService.csproj", "{7DC36591-2EFA-4CC1-BF91-C4D2D519BF1A}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailServiceSdk", "EmailServiceSdk\EmailServiceSdk.csproj", "{FFDEB0E2-DF8E-40F7-8DA0-FC10DB767BC1}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "EmailServiceSdk", "EmailServiceSdk\EmailServiceSdk.csproj", "{8A134D51-754B-45DF-A2AF-1E46DD23468F}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,18 +15,18 @@ Global
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{C0C760B5-2871-44D7-BB09-4283633A14C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C0C760B5-2871-44D7-BB09-4283633A14C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C0C760B5-2871-44D7-BB09-4283633A14C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C0C760B5-2871-44D7-BB09-4283633A14C9}.Release|Any CPU.Build.0 = Release|Any CPU
-		{C82B6C74-5883-4D13-AABC-9A114CA07EDF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{C82B6C74-5883-4D13-AABC-9A114CA07EDF}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{C82B6C74-5883-4D13-AABC-9A114CA07EDF}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{C82B6C74-5883-4D13-AABC-9A114CA07EDF}.Release|Any CPU.Build.0 = Release|Any CPU
-		{FFDEB0E2-DF8E-40F7-8DA0-FC10DB767BC1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{FFDEB0E2-DF8E-40F7-8DA0-FC10DB767BC1}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{FFDEB0E2-DF8E-40F7-8DA0-FC10DB767BC1}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{FFDEB0E2-DF8E-40F7-8DA0-FC10DB767BC1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1BB90CBC-2BA6-4326-8071-16AC276C80B6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1BB90CBC-2BA6-4326-8071-16AC276C80B6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1BB90CBC-2BA6-4326-8071-16AC276C80B6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1BB90CBC-2BA6-4326-8071-16AC276C80B6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7DC36591-2EFA-4CC1-BF91-C4D2D519BF1A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7DC36591-2EFA-4CC1-BF91-C4D2D519BF1A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7DC36591-2EFA-4CC1-BF91-C4D2D519BF1A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7DC36591-2EFA-4CC1-BF91-C4D2D519BF1A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8A134D51-754B-45DF-A2AF-1E46DD23468F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8A134D51-754B-45DF-A2AF-1E46DD23468F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8A134D51-754B-45DF-A2AF-1E46DD23468F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8A134D51-754B-45DF-A2AF-1E46DD23468F}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
