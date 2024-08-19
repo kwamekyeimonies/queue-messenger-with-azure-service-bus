@@ -128,6 +128,10 @@
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.4.0, )"
+            },
+            "runtime.debian.8-x64.runtime.native.System.Security.Cryptography.OpenSsl": {
+              "target": "Package",
+              "version": "[4.3.3, )"
             }
           },
           "imports": [

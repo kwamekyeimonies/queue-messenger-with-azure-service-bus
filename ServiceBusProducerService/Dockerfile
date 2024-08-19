@@ -1,31 +1,22 @@
-# Use the official .NET runtime as a parent image
-FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS base
-WORKDIR /app
-EXPOSE 80
-EXPOSE 443
-
-# Use the official .NET SDK image for building the application
+# Use the official .NET 8 SDK image to build the application
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy the .csproj file and restore the dependencies
-COPY ["ServiceBusProducerService.csproj", "ServiceBusProducerService/"]
-RUN dotnet restore "ServiceBusProducerService/ServiceBusProducerService.csproj"
+# Copy the project file and restore dependencies
+COPY ["ServiceBusProducerService.csproj", "./"]
+RUN dotnet restore
 
-# Copy the rest of the application code
+# Copy the remaining files and build the application
 COPY . .
+RUN dotnet publish -c Release -o /app/publish --no-restore
 
-WORKDIR "/src/ServiceBusProducerService"
-RUN dotnet build "ServiceBusProducerService.csproj" -c Release -o /app/build
-
-# Publish the application
-FROM build AS publish
-RUN dotnet publish "ServiceBusProducerService.csproj" -c Release -o /app/publish /p:UseAppHost=false
-
-# Create the final image
-FROM base AS final
+# Use the official .NET 8 runtime image to run the application
+FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
 WORKDIR /app
-COPY --from=publish /app/publish .
+COPY --from=build /app/publish .
 
-# Set the entry point for the container
+# Expose the port the application will listen on
+EXPOSE 80
+
+# Start the application
 ENTRYPOINT ["dotnet", "ServiceBusProducerService.dll"]

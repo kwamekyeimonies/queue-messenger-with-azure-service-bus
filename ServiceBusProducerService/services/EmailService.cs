@@ -26,16 +26,19 @@ public class EmailService
         
         using (MailMessage mailMessage = new MailMessage())
         {
-            mailMessage.From = new MailAddress("tenkorangd5@gmail.com");
-            mailMessage.To.Add(new MailAddress("kwamekyeimonies@gmail.com"));
+            mailMessage.From = new MailAddress("phyphydexoangle@gmail.com");
+            foreach(string recipient in emailRequest.Receipient){
+                mailMessage.To.Add(new MailAddress(recipient));
+            }
+            
             mailMessage.Subject = emailRequest.Subject;
             mailMessage.Body = emailRequest.Body;
 
-            using (var smtpClient = new SmtpClient("smtp.gmail.com"))
+            using (var smtpClient = new SmtpClient(configurationKeys.EmailClient))
             {
-                smtpClient.Port = 587;
+                smtpClient.Port = configurationKeys.EmailServerPort;
                 smtpClient.UseDefaultCredentials = false;
-                smtpClient.Credentials = new NetworkCredential("tenkorangd5@gmail.com", "vbuukfczmmlnaotv");
+                smtpClient.Credentials = new NetworkCredential(configurationKeys.Username, configurationKeys.Password);
                 smtpClient.EnableSsl = true; 
                 Console.WriteLine($"client credentials ${smtpClient.Credentials}");
                 
