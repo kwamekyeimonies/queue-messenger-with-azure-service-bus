@@ -2,13 +2,12 @@
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
 
-# Copy the project file and restore dependencies
-COPY ["ServiceBusProducerService.csproj", "./"]
-RUN dotnet restore
-
-# Copy the remaining files and build the application
+# Copy the entire solution and restore dependencies
 COPY . .
-RUN dotnet publish -c Release -o /app/publish --no-restore
+
+# Specify the project you want to build
+RUN dotnet restore "./ServiceBusProducerService/ServiceBusProducerService.csproj"
+RUN dotnet publish "./ServiceBusProducerService/ServiceBusProducerService.csproj" -c Release -o /app/publish --no-restore
 
 # Use the official .NET 8 runtime image to run the application
 FROM mcr.microsoft.com/dotnet/aspnet:8.0 AS final
