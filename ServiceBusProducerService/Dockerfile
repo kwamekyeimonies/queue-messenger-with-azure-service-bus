@@ -6,7 +6,7 @@ WORKDIR /src
 COPY . .
 
 # Specify the project you want to build
-RUN dotnet restore "gServiceBusProducerService/ServiceBusProducerService.csproj"
+RUN dotnet restore "ServiceBusProducerService/ServiceBusProducerService.csproj"
 RUN dotnet publish "ServiceBusProducerService/ServiceBusProducerService.csproj" -c Release -o /app/publish --no-restore
 
 # Use the official .NET 8 runtime image to run the application
